@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Library</title>
+</head>
+<body>
+    <h1>Small Library</h1>
+    <button onclick="gonnaAdd()">Add a Book</button>
+    <fieldset id="fieldset" style="visibility: hidden;">
+        <legend>Fill Out the Book details</legend>
+        <label for="book-title">Book Title</label><input type="text" id="book-title"><br>
+        <label for="book-author">Book Author</label><input type="text" id="book-author"><br>
+        <label for="year-published">Year Published</label><input type="date" id="year-published">
+    </fieldset>
+    <div id="books"></div>
+    <script>
+        const fset = document.getElementById('fieldset');
+        const gonnaAdd = ()=> {
+            fset.style.visibility = "visible";
+        }
+    </script>
+</body>
+</html>
